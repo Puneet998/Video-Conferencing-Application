@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================= INPUT ================= */
+.auth-input {
+  @apply w-full mb-4 px-4 py-3 rounded-lg bg-black/40 border border-white/10 focus:outline-none focus:border-indigo-500;
+}
+
+/* ================= FORM ANIMATION ================= */
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out;
+}
+
+/* ================= IMAGE REVEAL ================= */
+@keyframes imageReveal {
+  from {
+    transform: scale(1.1) translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-imageReveal {
+  animation: imageReveal 1s ease-out;
+}
+
+/* ================= CIRCLE RAIN ================= */
+.circle-rain {
+  position: absolute;
+  top: -60px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(circle, rgba(99,102,241,0.9), transparent);
+  border-radius: 50%;
+  animation-name: rainFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainFall {
+  from {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(120vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+
+/* home */
+
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes imageReveal {
+  from {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-imageReveal {
+  animation: imageReveal 0.8s ease-out;
+}
+
+
+
+
+/*  */
+/* ================= SLIDE UP ================= */
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out;
+}
+
+/* ================= IMAGE REVEAL ================= */
+@keyframes imageReveal {
+  from {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-imageReveal {
+  animation: imageReveal 0.8s ease-out;
+}
+
+/* ================= CIRCLE RAIN ================= */
+.circle-rain {
+  position: absolute;
+  top: -60px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(circle, rgba(99,102,241,0.9), transparent);
+  border-radius: 50%;
+  animation-name: rainFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainFall {
+  from {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(120vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+
+/* .control-btn {
+  @apply w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-xl hover:bg-white/20 transition;
+} */
+
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeScale {
+  animation: fadeScale 0.4s ease-out;
+}
+
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeScale {
+  animation: fadeScale 0.4s ease-out;
+}
+
+
+
+
